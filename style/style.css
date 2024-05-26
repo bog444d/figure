@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;   
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.nested-rectangles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+    background-color: #ff9999;
+    position: relative;
+}
+
+.nested-rectangles div {
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.nested-rectangles .blue {
+    width: 250px;
+    height: 250px;
+    background-color: #6699ff;
+    top: 0;
+    left: 0;
+}
+
+.nested-rectangles .yellow {
+    width: 125px;
+    height: 125px;
+    background-color: #ffcc66;
+    bottom: 0;
+    right: 0;
+}
+
+.nested-rectangles .small-blue {
+    width: 50px;
+    height: 50px;
+    background-color: #6699ff;
+    top: 10px;
+    right: 10px;
+}
+
+.nested-rectangles .small-green {
+    width: 25px;
+    height: 25px;
+    background-color: #66cc66;
+    top: 22.5px;
+    right: 22.5px;
+}
+
+.rectangles-row {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 20px;
+    background-color: #66cc66;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rectangles-row .yellow {
+    width: 100px;
+    height: 100px;
+    background-color: #ffcc66;
+}
